@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col"></div>
+        <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <h4 class="text-dark text-muted" style="margin-bottom: 30px;">Đăng Nhập</h4>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"style="margin-bottom: 10px;">Email</label>
+                          <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label"style="margin-bottom: 10px;">Mật Khẩu</label>
+                          <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                        </div>
+                        <button type="button" class="btn btn-info" (click)="submit()"style="margin-bottom: 10px;">Đăng Nhập</button>
+                        <div class="row"style="margin-bottom: 20px;">
+                            <div class="col-md-6">
+                                <a href="/sign-up" style="text-decoration: none;">Chưa có tài khoản ? <span class="text-danger">Đăng ký</span></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
